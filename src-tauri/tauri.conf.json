@@ -1,0 +1,67 @@
+{
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "fs": {
+        "all": true
+      },
+      "http": {
+        "all": true,
+        "request": true
+      },
+      "globalShortcut": {
+        "all": true
+      },
+      "clipboard": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.voice2prompt.app",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": "default-src 'self' https://api.openai.com; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Voice2Prompt",
+        "width": 400,
+        "height": 300,
+        "minWidth": 300,
+        "minHeight": 200,
+        "alwaysOnTop": true
+      }
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
+    }
+  },
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "Voice2Prompt",
+    "version": "0.1.0"
+  }
+}

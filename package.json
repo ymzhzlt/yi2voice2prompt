@@ -1,0 +1,34 @@
+{
+  "name": "voice2prompt",
+  "version": "0.1.0",
+  "description": "Voice to text tool with OpenAI Whisper and GPT formatting",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "demo-record": "ts-node scripts/demo-record.ts"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.5.0",
+    "axios": "^1.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.5.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

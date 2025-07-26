@@ -1,0 +1,34 @@
+{
+  "models": {
+    "whisper": "whisper-1",
+    "gpt": "gpt-4o-mini"
+  },
+  "shortcuts": {
+    "record": "Ctrl+Alt+R",
+    "stop": "Ctrl+Alt+S"
+  },
+  "audio": {
+    "format": "wav",
+    "sampleRate": 16000,
+    "channels": 1,
+    "bitDepth": 16,
+    "maxDuration": 30
+  },
+  "api": {
+    "whisperUrl": "https://api.openai.com/v1/audio/transcriptions",
+    "chatUrl": "https://api.openai.com/v1/chat/completions",
+    "timeout": 30000
+  },
+  "ui": {
+    "alwaysOnTop": true,
+    "minWidth": 300,
+    "minHeight": 200,
+    "defaultWidth": 400,
+    "defaultHeight": 300
+  },
+  "privacy": {
+    "uploadEnabled": true,
+    "cacheAudio": false,
+    "logLevel": "info"
+  }
+}
